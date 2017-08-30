@@ -15,3 +15,4 @@ Real-time face recognition program using Google's facenet.
 ## Face alignment using MTCNN
 * You need [det1.npy, det2.npy, and det3.npy](https://github.com/davidsandberg/facenet/tree/master/src/align) in the [davidsandberg](https://github.com/davidsandberg/facenet) repository.
 ## Result
+<img src="https://github.com/bearsprogrammer/real-time-deep-face-recogniton/blob/master/realtime_demo_pic.jpg" width="60%">
