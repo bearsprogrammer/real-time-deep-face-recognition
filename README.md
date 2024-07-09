@@ -20,5 +20,7 @@ Real-time face recognition program using Google's facenet.
 </br>Your own classifier is a ~.pkl file that loads the previously mentioned pre-trained model ('[20170511-185253.pb](https://drive.google.com/file/d/0B5MzpY9kBtDVOTVnU3NIaUdySFE/edit)') and embeds the face for each person.<br/>All of these can be obtained by running 'Make_classifier.py'.<br/>
 * Finally, we load our own 'my_classifier.pkl' obtained above and then open the sensor and start recognition.
 </br> (Note that, look carefully at the paths of files and folders in all .py)
+### Docker
+* First, clone this repo and change current directory to its directory on your device. Next, put the images of each person in separated directories with the names that you want to be shown for each person inside the '*data*' directory; for example, Daehyun's photos are in: '*./data/Daehyun*' and Byeonggil's are in: '*./data/Byeonggil*'. Then, you can run it in two ways: <br/>1. Build the Docker image by running: <br/>`docker build -t "your_image_name":"your_image_tag" .` <br/>After the build is done, run: <br/>`docker run --device /dev/video0:/dev/video0 "your_image_name":"your_image_tag` <br/>2. Run: <br/>`docker compose up`. <br/> (Note that Windows doesn’t give camera access to Docker containers. So, you can just run this container on Linux.)
 ## Result
 <img src="https://github.com/bearsprogrammer/real-time-deep-face-recogniton/blob/master/realtime_demo_pic.jpg" width="60%">

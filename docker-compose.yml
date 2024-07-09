@@ -1,0 +1,5 @@
+services:
+    real-time-deep-face-recognition:
+        build: .
+        devices:
+            - /dev/video0:/dev/video0
